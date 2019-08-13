@@ -10,8 +10,8 @@
  *
  */
  
-#pragma include "phase_14/models/shaders/stdshaders/common.inc.glsl"
-#pragma include "phase_14/models/shaders/stdshaders/common_animation_vert.inc.glsl"
+#pragma include "shaders/stdshaders/common.inc.glsl"
+#pragma include "shaders/stdshaders/common_animation_vert.inc.glsl"
  
 uniform mat4 p3d_ModelViewProjectionMatrix;
 

@@ -39,7 +39,7 @@ const vec3 g_localBumpBasis[3] = vec3[](
 );
 //====================================================
 
-#pragma include "phase_14/models/shaders/stdshaders/common_lighting_frag.inc.glsl"
+#pragma include "shaders/stdshaders/common_lighting_frag.inc.glsl"
 
 vec3 LightmapSample(sampler2DArray lightmapSampler, vec2 coords, int page)
 {
