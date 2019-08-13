@@ -11,10 +11,10 @@ class Game(BSPBase):
         self.createShaderGenerator()
         self.createPostProcess()
         
-        self.loadBSPLevel("mapsrc/example/example.bsp")
+        self.loadBSPLevel("maps/example.bsp")
         
-        base.enableMouse()
-        base.camLens.setMinFov(70.0 / (4./3.))
+        self.enableMouse()
+        self.camLens.setMinFov(70.0 / (4./3.))
         
 base = Game()
 base.run()

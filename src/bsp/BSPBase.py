@@ -36,11 +36,11 @@ class BSPBase(ShowBase):
                                  
         # Enable shader generation on all of the main scenes
         if gsg.getSupportsBasicShaders() and gsg.getSupportsGlsl():
-            render.setShaderAuto()
-            render2d.setShaderAuto()
-            render2dp.setShaderAuto()
-            aspect2d.setShaderAuto()
-            pixel2d.setShaderAuto()
+            self.render.setShaderAuto()
+            self.render2d.setShaderAuto()
+            self.render2dp.setShaderAuto()
+            self.aspect2d.setShaderAuto()
+            self.pixel2d.setShaderAuto()
         else:
             # I don't know how this could be possible
             self.notify.error("GLSL shaders unsupported by graphics driver.")
@@ -61,8 +61,6 @@ class BSPBase(ShowBase):
         self.bspLoader = None
         self.bspLevel = None
         self.brushCollisionMaterialData = {}
-        self.skyBox = None
-        self.skyBoxUtil = None
         self.createBSPLoader()
         
         self.audio3d = None
